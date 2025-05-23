@@ -1,12 +1,12 @@
 /* 🌈 Color Palette */
 :root {
     --african-violet: #9c89b8;
-    --periwinkle: #d7dbf1;
+    --periwinkle: #a3afeb;
     --lavender-blush: #f5f2f7;
     --pink-lavender: #efc3e6;
     --onyx: #1e1e1e;
     --soft-gray: #f8f9fa;
-  }
+}
   
   /* 🔤 Typography & Base */
   body {
@@ -19,50 +19,66 @@
     padding: 0;
   }
 
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 1200px; 
+  }
+
 .logo-img {
-    height: 80px;
+    height: 125px;
     width: auto;
+    border-radius: 50%;
+    justify-content: center;
 }
   
-
   /* 🔤 Hero-style intro, but Reid-style palette */
 .about-intro {
     background-color: var(--background); /* white or soft-gray */
     color: var(--onyx);
     text-align: left;
-  }
+}
   
-  .intro-heading {
+.intro-heading {
     font-size: 3rem;
     font-weight: 700;
     color: var(--onyx);
-  }
+}
   
-  .intro-subheading {
-    font-size: 1.5rem;
+.intro-subheading {
+    font-size: 2rem;
     color: var(--african-violet);
     font-weight: 400;
     margin-top: 0.5rem;
-  }
+}
   
-  .social-icons a {
-    font-size: 1.8rem;
+.social-icons a {
+    font-size: 2rem;
     margin-right: 1rem;
     color: var(--african-violet);
     transition: color 0.2s ease;
-  }
+}
   
   .social-icons a:hover {
     color: var(--pink-lavender);
   }
   
-  /* About Paragraph */
-  .about-paragraph {
-    /* max-width: 700px; */
-    line-height: 1.8;
-    font-size: 1rem;
+  .resume-btn {
+    border-color: var(--african-violet);
+    color: var(--african-violet);
+    font-weight: 500;
   }
   
+  .resume-btn:hover {
+    background-color: var(--african-violet);
+    color: white;
+  }
+  
+  /* About Paragraph */
+  .about-paragraph {
+    line-height: 1.8;
+    font-size: 1.2rem;
+  }
   
   h1, h2, h3 {
     font-weight: 600;
@@ -93,7 +109,7 @@
   .site-header {
     background-color: white;
     border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
   
   .site-title {
@@ -111,11 +127,6 @@
   
   .nav-link:hover {
     color: var(--african-violet);
-  }
-  
-  /* 🧩 Sections */
-  section {
-    padding: 2rem 0;
   }
   
   /* 🃏 Cards */
@@ -155,6 +166,8 @@
     border-radius: 4px;
     font-weight: 500;
     transition: background-color 0.2s ease;
+    /* border-radius: 999px; */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   }
   
   .btn-primary:hover {
@@ -163,18 +176,62 @@
   }
   
   /* 📫 Contact */
-  #contact i {
-    margin-right: 0.5rem;
+
+  #contact h2 {
+    font-size: 2rem;
     color: var(--african-violet);
+    font-weight: 600;
   }
+  
+  #contact p {
+    font-size: 1.1rem;
+    color: var(--onyx);
+  }
+  
+  .btn-outline-violet {
+    border: 2px solid var(--periwinkle);
+    color: var(--periwinkle);
+    background-color: transparent;
+    padding: 0.5rem 1.2rem;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-outline-violet:hover {
+    background-color: var(--pink-lavender);
+    color: white;
+  }  
+  
   
   /* 📎 Footer */
   footer {
-    background-color: white;
+    /* background-color: white; */
     border-top: 1px solid #e0e0e0;
     text-align: center;
     padding: 2rem 0;
     font-size: 0.875rem;
-    color: #777;
+    /* color: #777; */
+    background-color: var(--soft-gray);
+    color: var(--onyx);
+  }
+  
+
+
+  /* Emerald Uprising */
+  .text-violet {
+    color: var(--african-violet);
+  }
+  
+  .project-section p {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: var(--onyx);
+    margin-bottom: 1.2rem;
+  }
+  
+  .project-section .lead {
+    font-weight: 500;
+    color: var(--african-violet);
   }
   
