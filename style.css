@@ -19,6 +19,12 @@
     padding: 0;
   }
 
+.logo-img {
+    height: 80px;
+    width: auto;
+}
+  
+
   /* 🔤 Hero-style intro, but Reid-style palette */
 .about-intro {
     background-color: var(--background); /* white or soft-gray */
