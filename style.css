@@ -234,4 +234,70 @@
     font-weight: 500;
     color: var(--african-violet);
   }
+
+  .research-box {
+    background-color: var(--lavender-blush);
+    border-left: 6px solid var(--african-violet);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+  }
+  
+  .research-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--onyx);
+  }
+  
+  .research-role {
+    font-size: 1.1rem;
+    color: var(--african-violet);
+  }
+  
+  .research-description {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .research-link a {
+    color: var(--onyx);
+    font-weight: 500;
+  }
+  
+  .research-link a:hover {
+    color: var(--pink-lavender);
+  }
+  
+  .work-box {
+    background-color: var(--soft-gray);
+    border-left: 6px solid var(--periwinkle);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+  }
+  
+  .work-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--onyx);
+  }
+  
+  .work-role {
+    font-size: 1.1rem;
+    color: var(--periwinkle);
+  }
+  
+  .work-description {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .work-link a {
+    color: var(--onyx);
+    font-weight: 500;
+  }
+  
+  .work-link a:hover {
+    color: var(--pink-lavender);
+  }
+    
+  
   
