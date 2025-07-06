@@ -1,14 +1,14 @@
-/* 🌈 Color Palette */
-:root {
-    --african-violet: #9c89b8;
-    --periwinkle: #a3afeb;
-    --lavender-blush: #f5f2f7;
-    --pink-lavender: #efc3e6;
-    --onyx: #1e1e1e;
-    --soft-gray: #f8f9fa;
-}
+/* colors */
+  :root {
+      --african-violet: #9c89b8;
+      --periwinkle: #a3afeb;
+      --lavender-blush: #f5f2f7;
+      --pink-lavender: #efc3e6;
+      --onyx: #1e1e1e;
+      --soft-gray: #f8f9fa;
+    }
   
-  /* 🔤 Typography & Base */
+/* base typography & layout */
   body {
     background-color: white;
     color: var(--onyx);
@@ -20,107 +20,34 @@
   }
 
   .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding:0 1.5rem;
     max-width: 1200px; 
   }
 
-.logo-img {
-    height: 125px;
-    width: auto;
-    border-radius: 50%;
-    justify-content: center;
-}
-  
-.about-intro {
-    background-color: var(--background); /* white or soft-gray */
-    color: var(--onyx);
-    text-align: left;
-}
-  
-.intro-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--onyx);
-}
-  
-.intro-subheading {
-    font-size: 2rem;
-    color: var(--african-violet);
-    font-weight: 400;
-    margin-top: 0.5rem;
-}
-  
-.social-icons a {
-    font-size: 2rem;
-    margin-right: 1rem;
-    color: var(--african-violet);
-    transition: color 0.2s ease;
-}
-  
-  .social-icons a:hover {
-    color: var(--pink-lavender);
-  }
-  
-  .resume-btn {
-    border-color: var(--african-violet);
-    color: var(--african-violet);
-    font-weight: 500;
-  }
-  
-  .resume-btn:hover {
-    background-color: var(--african-violet);
-    color: white;
-  }
-  
-  /* About Paragraph */
-  .about-paragraph {
-    line-height: 1.8;
-    font-size: 1.2rem;
-  }
-  
-  h1, h2, h3 {
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
   h2 {
     font-size: 1.75rem;
     color: var(--african-violet);
   }
-  
-  h3 {
-    font-size: 1.25rem;
-    color: var(--onyx);
+
+/* logo */
+  .logo-img {
+      height: 125px;
+      width: auto;
+      border-radius: 50%;
+      display: block;
+      margin: 0, auto;
   }
-  
-  /* 🔗 Links */
-  a {
-    text-decoration: none;
-    color: var(--african-violet);
-  }
-  
-  a:hover {
-    color: var(--pink-lavender);
-  }
-  
-  /* 🧱 Header */
+
+/* site header */
   .site-header {
     background-color: white;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 0.5rem;
   }
-  
-  .site-title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: var(--onyx);
-    margin: 0;
-  }
-  
+
   .nav-link {
     color: var(--onyx);
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 1rem;
   }
   
@@ -128,7 +55,32 @@
     color: var(--african-violet);
   }
   
-  /* 🃏 Cards */
+/* about section */
+  .about-intro {
+      color: var(--onyx);
+      text-align: left;
+      margin-bottom: 1rem;
+  }
+  
+  .intro-heading {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--onyx);
+  }
+  
+  .intro-subheading {
+      font-size: 1.5rem;
+      color: var(--african-violet);
+      font-weight: 400;
+      margin-top: 0.5rem;
+  }
+  
+  .about-paragraph {
+    line-height: 1.8;
+    font-size: 1.2rem;
+  }
+
+/* project cards */
   .card {
     background-color: var(--soft-gray);
     border: none;
@@ -138,7 +90,7 @@
     transition: box-shadow 0.2s ease, transform 0.2s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.06);
   }
-  
+
   .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.08);
@@ -155,8 +107,89 @@
     color: #555;
     margin-bottom: 1rem;
   }
-  
-  /* 🖱️ Buttons */
+
+  .project-img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+
+/* research + work section */
+  .research-box,
+  .work-box {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+    padding: 1rem;
+  }
+
+  .research-box {
+    background-color: var(--lavender-blush);
+    border-left: 6px solid var(--african-violet);
+  }
+
+  .work-box {
+    background-color: var(--soft-gray);
+    border-left: 6px solid var(--periwinkle);
+  }
+
+  .research-title,
+  .work-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--onyx);
+  }
+
+  .research-role {
+    font-size: 1.1rem;
+    color: var(--african-violet);
+  }
+
+  .work-role {
+    font-size: 1.1rem;
+    color: var(--periwinkle);
+  }
+
+  .research-description,
+  .work-description {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+
+  .research-link a,
+  .work-link a {
+    color: var(--onyx);
+    font-weight: 500;
+  }
+
+  .research-link a:hover,
+  .work-link a:hover {
+    color: var(--pink-lavender);
+  }
+
+/* contact section */
+  #contact h2 {
+    font-size: 2rem;
+    color: var(--african-violet);
+    font-weight: 600;
+  }
+
+  #contact p {
+    font-size: 1.1rem;
+    color: var(--onyx);
+  }
+
+/* footer */
+  footer {
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.875rem;
+    background-color: var(--soft-gray);
+    color: var(--onyx);
+  }
+
+/* buttons */
   .btn-primary {
     background-color: var(--african-violet);
     border: none;
@@ -165,36 +198,14 @@
     border-radius: 4px;
     font-weight: 500;
     transition: background-color 0.2s ease;
-    /* border-radius: 999px; */
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   }
-  
+
   .btn-primary:hover {
     background-color: var(--pink-lavender);
     color: var(--onyx);
   }
 
-  .project-img {
-    width: auto;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 5%;
-  }
-  
-  
-  /* 📫 Contact */
-
-  #contact h2 {
-    font-size: 2rem;
-    color: var(--african-violet);
-    font-weight: 600;
-  }
-  
-  #contact p {
-    font-size: 1.1rem;
-    color: var(--onyx);
-  }
-  
   .btn-outline-violet {
     border: 2px solid var(--periwinkle);
     color: var(--periwinkle);
@@ -209,114 +220,51 @@
     background-color: var(--pink-lavender);
     color: white;
   }  
-  
-  
-  /* 📎 Footer */
-  footer {
-    /* background-color: white; */
-    border-top: 1px solid #e0e0e0;
-    text-align: center;
-    padding: 2rem 0;
-    font-size: 0.875rem;
-    /* color: #777; */
-    background-color: var(--soft-gray);
-    color: var(--onyx);
-  }
-  
 
-
-  /* Emerald Uprising */
-  .text-violet {
+/* social icons */
+  .social-icons a {
+    font-size: 2rem;
+    margin-right: 1rem;
     color: var(--african-violet);
-  }
-  
-  .project-section p {
-    font-size: 1.1rem;
-    line-height: 1.75;
-    color: var(--onyx);
-    margin-bottom: 1.2rem;
-  }
-  
-  .project-section .lead {
-    font-weight: 500;
-    color: var(--african-violet);
+    transition: color 0.2s ease;
   }
 
-  .research-box {
-    background-color: var(--lavender-blush);
-    border-left: 6px solid var(--african-violet);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.04);
-  }
-  
-  .research-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--onyx);
-  }
-  
-  .research-role {
-    font-size: 1.1rem;
-    color: var(--african-violet);
-  }
-  
-  .research-description {
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
-  }
-  
-  .research-link a {
-    color: var(--onyx);
-    font-weight: 500;
-  }
-  
-  .research-link a:hover {
+  .social-icons a:hover {
     color: var(--pink-lavender);
   }
-  
-  .work-box {
-    background-color: var(--soft-gray);
-    border-left: 6px solid var(--periwinkle);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+
+/* links */
+  a {
+    text-decoration: none;
+    color: var(--african-violet);
   }
-  
-  .work-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--onyx);
-  }
-  
-  .work-role {
-    font-size: 1.1rem;
-    color: var(--periwinkle);
-  }
-  
-  .work-description {
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
-  }
-  
-  .work-link a {
-    color: var(--onyx);
-    font-weight: 500;
-  }
-  
-  .work-link a:hover {
+
+  a:hover {
     color: var(--pink-lavender);
   }
-    
+
+/* ---------------------------- */
+
+/* Emerald Uprising page */
   .hero-banner {
     background: linear-gradient(135deg, #f5f2f7 0%, #e8f0fb 100%);
     border-radius: 16px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
   }
-  
+
   .badge {
     font-size: 0.95rem;
     padding: 0.5rem 0.8rem;
     border-radius: 999px;
   }
+
+  .text-violet {
+    color: var(--african-violet);
+  }
+
+/* ---------------------------- */
+  
+
   
   
   
