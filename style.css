@@ -32,7 +32,6 @@
     justify-content: center;
 }
   
-  /* 🔤 Hero-style intro, but Reid-style palette */
 .about-intro {
     background-color: var(--background); /* white or soft-gray */
     color: var(--onyx);
@@ -174,6 +173,14 @@
     background-color: var(--pink-lavender);
     color: var(--onyx);
   }
+
+  .project-img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  
   
   /* 📫 Contact */
 
@@ -299,5 +306,17 @@
     color: var(--pink-lavender);
   }
     
+  .hero-banner {
+    background: linear-gradient(135deg, #f5f2f7 0%, #e8f0fb 100%);
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+  }
+  
+  .badge {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+  }
+  
   
   
