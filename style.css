@@ -119,7 +119,63 @@
     border-radius: 8px;
     display: inline-block;
   }
-  
+
+  /* --- Clickable Project Cards (Refined) --- */
+.card-link {
+  display: block;
+  color: inherit;
+  border-radius: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  position: relative;
+  background-color: var(--soft-gray);
+}
+
+.card-link:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  background-color: #cdbdec; /* subtle neutral lavender-gray tint */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Titles & text stay readable */
+.card-link h3,
+.card-link p {
+  color: inherit;
+}
+
+/* Subtle bottom cue */
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--african-violet);
+  opacity: 0.75;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.card-link:hover .card-footer {
+  opacity: 1;
+  transform: translateX(3px);
+  color: var(--african-violet);
+}
+
+/* Optional: minimalist arrow animation for the title */
+.card-link h3::after {
+  content: " →";
+  opacity: 0;
+  color: var(--african-violet);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateX(-4px);
+}
+
+.card-link:hover h3::after {
+  opacity: 0.9;
+  transform: translateX(0);
+}
+
 
 /* research + work section */
   .research-box,
@@ -239,9 +295,9 @@
     color: var(--african-violet);
   }
 
-  a:hover {
+  /* a:hover {
     color: var(--pink-lavender);
-  }
+  } */
 
 /* ---------------------------- */
 
@@ -265,6 +321,18 @@
 /* ---------------------------- */
   
 /* RSOcial */
+
+iframe {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+iframe:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
 
 
   
