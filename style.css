@@ -83,6 +83,17 @@
     font-size: 1.14rem;
   }
 
+  .about-photo {
+    max-width: 450px;
+    border-radius: 50%;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+  }
+  
+  .about-photo:hover {
+    transform: scale(1.1);
+  }  
+
 /* project cards */
   .card {
     background-color: var(--soft-gray);
