@@ -317,10 +317,10 @@ iframe {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-iframe:hover {
+/* iframe:hover {
   transform: scale(1.01);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
-}
+} */
 
 
   
