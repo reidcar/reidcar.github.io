@@ -24,9 +24,9 @@
     <div class="container py-4">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
         <div class="logo">
-          <img src="./assets/rca-logo.png" alt="RCA Logo" class="logo-img">
+          <img src="./assets/rca-logo.png" alt="Reid Alexander logo" class="logo-img" />
         </div>
-        <nav class="mt-3 mt-md-0">
+        <nav class="mt-3 mt-md-0" aria-label="Main navigation">
           <ul class="nav justify-content-center">
             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
             <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
@@ -37,67 +37,101 @@
       </div>
     </div>
   </header>
-  
 
   <main class="container">
     <section id="about" class="about-intro py-5">
       <div class="container">
-        <h1 class="intro-heading mt-3">Hi, I'm Reid! 🐈</h1>
-        <p class="intro-subheading">I'm a student at the University of Washington.</p>
+        <div class="row align-items-center">
+          
+          <!-- Left side: text -->
+          <div class="col-md-7">
+            <h1 class="intro-heading mt-3">Hi, I'm Reid! 🧡</h1>
+            <p class="intro-subheading">It's nice to meet you!</p>
     
-        <div class="social-icons mt-3 mb-4">
-          <a href="https://linkedin.com/in/reidalexander141" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="./assets/Resume_ReidAlexander.pdf" target="_blank"><i class="bi bi-file-earmark-text"></i></a>
-          <!-- <a href="mailto:reidcar@uw.edu" target="_blank"><i class="bi bi-envelope"></i></a> -->
-        </div>
+            <div class="social-icons mt-3 mb-4">
+              <a href="https://linkedin.com/in/reidalexander141" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="./assets/110225_ReidAlexander.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume PDF">
+                <i class="bi bi-file-earmark-text"></i>
+              </a>
+            </div>
     
-        <!-- <h2 class="mt-5">About</h2> -->
-        <p class="about-paragraph">
-          I'm an Informatics student at the University of Washington who's
-          passionate about UX and HCI and committed to designing experiences that are intuitive, inclusive, and genuinely delightful. 
-          Outside the classroom, I work as a professional sports <a href="https://photosbyreid.com" target="_blank">sports photographer</a>,
-          capturing energy, emotion, and moments that tell a story. The same curiosity that guides my photography helps me notice what moves people in subtle ways, 
-          allowing me to create interfaces that feel human and meaningful.
-        </p>
+            <p class="about-paragraph">
+              I'm an Informatics student at the University of Washington who's
+              passionate about UX and HCI and committed to designing experiences that are intuitive, inclusive, and genuinely delightful. 
+              Outside the classroom, I work as a professional sports <a href="https://photosbyreid.com" target="_blank">sports photographer</a>,
+              capturing energy, emotion, and moments that tell a story. The same curiosity that guides my photography helps me notice what moves people in subtle ways, 
+              allowing me to create interfaces that feel human and meaningful.
+            </p>
+          </div>
+    
+          <!-- Right side: image -->
+          <div class="col-md-5 text-center">
+            <img src="./assets/reid.jpeg" alt="Photo of Reid Alexander" class="about-photo img-fluid rounded-circle shadow-sm">
+          </div>
+    
+        </div>        
       </div>
     </section>
     
+    
     <section id="projects">
       <div class="container">
-        <h2 class="pb-2">💻 My Projects</h2>
-        
+        <h2 class="pb-2">My Projects</h2>
+    
         <div class="row gy-4">
-
+          <!-- The Purrfect Place -->
           <div class="col-md-6">
-            <div class="card">
-              <h3 class="card-title">UX Game Design: Emerald Uprising</h3>
-              <p class="card-text">A game for social good: a co-op FPS tackling climate change through gameplay.</p>
-              <div>
-                <img src="assets/emerald uprising/hi fi co-op.png" alt="Emerald Uprising Wireframe" class="card-img-top mb-4 project-img">
-              </div>
-              <div class="d-flex gap-2">
-                <a href="./projects/emeraldUprising.html" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
+            <a href="./projects/purrfectPlace.html" class="card card-link text-decoration-none">
+              <h3 class="card-title">The Purrfect Place</h3>
+              <p class="card-text">
+                An interactive, scenario-based experience inspired by The Good Place where you go through silly moral dilemmas… but as a cat character from the show.
+              </p>
+              <img src="assets/purrfect.jpg" alt="The Purrfect Place Wireframe" class="mb-4 project-img">
+            </a>
           </div>
           
+          <!-- Emerald Uprising -->
           <div class="col-md-6">
-            <div class="card">
-              <h3 class="card-title">RSOcial</h3>
-              <p class="card-text">A mobile application for enhancing Registered Student Organization (RSO) discoverability at UW.</p>
-              <div>
-                <img src="assets/rsocial-phones.png" alt="RSOcial phones" class="card-img-top mb-4 project-img">
-              </div>
-              <div class="d-flex gap-2">
-                <a href="./assets/RSOcial.pdf" class="btn btn-primary" target="_blank">View Slide Deck</a>
-                <a href="https://www.figma.com/proto/L4oEg9WFCYxIgZwcm6anET/Solution-Draft?node-id=133-48&t=oOrpew3ecdRYn2JE-1&starting-point-node-id=133%3A48" class="btn btn-primary" target="_blank">Open Figma Prototype</a>
-              </div>
-            </div>
-          </div>       
+            <a href="./projects/emeraldUprising.html" class="card card-link text-decoration-none">
+              <h3 class="card-title">Emerald Uprising</h3>
+              <p class="card-text">
+                Think <em>Wall-E's</em> representation of a polluted future, the whimsical plant-based combat of 
+                <em>Plants vs. Zombies</em>, and the strategic FPS intensity of <em>Valorant</em>.
+              </p>
+              <img src="assets/emerald uprising/hi fi co-op.png" alt="Emerald Uprising Wireframe" class="mb-4 project-img">
+            </a>
+          </div>
+        </div>
 
+        <div class="row gy-4">
+        <!-- RSOcial -->
+        <div class="col-md-6">
+          <a href="./projects/rsocial.html" class="card card-link text-decoration-none">
+            <h3 class="card-title">RSOcial</h3>
+            <p class="card-text">
+              How might we make RSOs more discoverable for UW students to join so students can better 
+              experience social and personal growth while at University of Washington?
+            </p>
+            <img src="assets/rsocial-phones.png" alt="RSOcial phones" class="mb-4 project-img">
+          </a>
+        </div>
+        
+        <!-- Human Values & AI Zine -->
+        <div class="col-md-6">
+          <a href="./projects/zine-ai.html" class="card card-link text-decoration-none">
+            <h3 class="card-title">Human Values & AI Zine</h3>
+            <p class="card-text">
+              A personal reflection on creativity and automation, exploring how AI reshapes tools — and what it means for artistic intuition.
+            </p>
+            <p></p>
+            <img src="assets/zine-ai.png" alt="AI Zine Preview" class="mb-4 project-img">
+          </a>
         </div>
       </div>
-    </section>  
+    </section>
+    
 
     <section id="research" class="py-5">
       <div class="container">
@@ -106,12 +140,14 @@
           <h3 class="research-title">PULSE Lab - University of Washington</h3>
           <p class="research-role mb-1"><strong>Research Assistant</strong> (April 2025 - Present)</p>
           <p class="research-description">
-            I am conducting a literature review on the role of science and design fiction in shaping public
-            understanding of scientific knowledge. I plan to use what I discover to build a design project focused on improving science
-            communication.
+            I'm conducting a literature review on how speculative and design fiction can shape public understanding of science and elicit people's
+             beliefs and perspectives around research topics. Building on this, I'm exploring ways to make it easier to generate and share “useful fictions” — 
+             through frameworks, online platforms, or design methods that support creative engagement with science. My goal is to prototype a design project that 
+             helps researchers and non-experts communicate and imagine scientific futures together.
           </p>
           <p class="research-link">
-            Advisor: Spencer Williams | Lab Site: <a href="https://pulse-lab-uw.github.io" target="_blank">PULSE Lab</a>
+            Advisor: Spencer Williams |
+            Lab Site: <a href="https://pulse-lab-uw.github.io" target="_blank" rel="noopener noreferrer">PULSE Lab</a>
           </p>
         </div>
       </div>
@@ -120,45 +156,30 @@
     <section id="work" class="pt-2 pb-5">
       <div class="container">
         <h2>💼 Work Experience</h2>
+
         <div class="work-box p-4 my-4">
           <h3 class="work-title">UW Athletics</h3>
-          <p class="work-role mb-1"><strong>Sports Creative</strong> (Jan 2024 - Present)</p>
-          <p class="work-description">
-            <ul>
-              <li>
-                Provide real-time coverage of live sporting events, ensuring fast turnaround of deliverables for media and marketing needs.
-              </li>
-              <li>
-                Create visual content for the University of Washington's 22 athletic teams, utilized in social media, marketing campaigns, and recruitment efforts.
-              </li>
-              <li>
-                Collaborate with a creative team to execute high-profile photography for recruits, DEI initiatives, and digital marketing strategies, strengthening UW Athletics' visual brand across digital platforms.
-              </li>
-            </ul>
-          </p>
+          <p class="work-role mb-1"><strong>Sports Creative</strong> (January 2024 - Present)</p>
+          <ul class="work-description">
+            <li>Provide real-time coverage of live sporting events, ensuring fast turnaround of deliverables for media and marketing needs.</li>
+            <li>Create visual content for 22 athletic teams, used in social media, marketing campaigns, and recruitment efforts.</li>
+            <li>Collaborate on high-profile shoots for DEI initiatives and digital marketing strategies.</li>
+          </ul>
           <p class="work-link">
-            Portfolio: <a href="https://photosbyreid.com" target="_blank">photosbyreid.com</a>
+            Portfolio: <a href="https://photosbyreid.com" target="_blank" rel="noopener noreferrer">photosbyreid.com</a>
           </p>
         </div>
 
         <div class="work-box p-4 my-4">
           <h3 class="work-title">Seattle Storm</h3>
-          <p class="work-role mb-1"><strong>Seasonal Team Photographer</strong> (May - Sept 2025)</p>
-          <p class="work-description">
-            <ul>
-              <li>
-                Capture a range of home game day visuals including player arrivals, in-game action, fan activations, and VIP appearances for the WNBA's Seattle Storm.
-              </li>
-              <li>
-                Provide high-quality content for marketing and social media use in a fast-paced environment.
-              </li>
-            </ul>
-          </p>
-        </div>
+          <p class="work-role mb-1"><strong>Seasonal Team Photographer</strong> (May - October 2025)</p>
+          <ul class="work-description">
+            <li>Capture home game visuals including arrivals, in-game action, fan activations, and VIPs for the WNBA's Seattle Storm.</li>
+            <li>Deliver high-quality content for marketing and social media use in a fast-paced environment.</li>
+          </ul>
         </div>
       </div>
-
-    </section>    
+    </section>  
     
 
     <section id="contact" class="pt-2 pb-5">
@@ -167,32 +188,26 @@
         <p class="mb-4">
           Whether you want to chat design, collaborate on a project, or just say hi — my inbox is always open.
         </p>
-    
         <div class="d-flex flex-column flex-md-row gap-3">
           <a href="mailto:reidcar@uw.edu" class="btn btn-outline-violet">
             <i class="bi bi-envelope-fill me-2"></i>Email Me
           </a>
-          <a href="https://linkedin.com/in/reidalexander141" target="_blank" class="btn btn-outline-violet">
+          <a href="https://linkedin.com/in/reidalexander141" class="btn btn-outline-violet" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-linkedin me-2"></i>Connect on LinkedIn
           </a>
-          <a href="./assets/ReidAlexander_Resume.pdf" target="_blank" class="btn btn-outline-violet">
+          <a href="./assets/Resume_20251020.pdf" class="btn btn-outline-violet" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-file-earmark-text me-2"></i>View Resume
-          </a>          
           </a>
         </div>
-    
       </div>
     </section>
-    
   </main>
 
   <footer>
     <p>
-      The sky's the limit <br />
-      <br />
+      The sky's the limit<br /><br />
       &copy; 2025 Reid Alexander
     </p>
   </footer>
 </body>
-
 </html>
