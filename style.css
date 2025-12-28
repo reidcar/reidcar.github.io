@@ -84,15 +84,19 @@
   }
 
   .about-photo {
-    max-width: 450px;
+    width: 350px;
+    height: 450px;          /* taller than wide */
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 6px 16px rgba(0,0,0,0.08);
     transition: transform 0.2s ease;
   }
   
+  
   .about-photo:hover {
-    transform: scale(1.1);
-  }  
+    transform: scale(1.05);
+  }
+  
 
 /* project cards */
   .card {
