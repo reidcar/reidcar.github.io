@@ -19,7 +19,7 @@
 
   <style>
     /* Lightweight page-only styling (safe even if style.css changes later) */
-    .case-hero { padding: 3rem 0 2rem; }
+    .case-hero { padding: 3rem 0 1rem; }
     .case-title { font-size: 2.4rem; font-weight: 700; margin-bottom: 0.5rem; }
     .case-subtitle { font-size: 1.1rem; color: #666; max-width: 60ch; }
     .case-meta { display:flex; flex-wrap:wrap; gap:0.5rem; margin-top: 1rem; }
@@ -42,7 +42,8 @@
       border: 1px solid rgba(0,0,0,0.06);
       box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     }
-    .caption { font-size: 0.9rem; color:#666; margin-top: 0.5rem; }
+
+    .caption { font-size: 0.9rem; color:#666; margin-top: 0.75rem; text-align: center; }
     .quote {
       border-left: 4px solid rgba(0,0,0,0.12);
       padding-left: 1rem;
@@ -58,7 +59,7 @@
         <div class="container py-4">
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
             <div class="logo">
-              <img src="../assets/rca-logo.png" alt="Reid Alexander logo" class="logo-img" />
+                <a href="../index.html" class="nav-link"><img src="../assets/rca-logo.png" alt="Reid Alexander logo" class="logo-img" /></a>
             </div>
             <nav class="mt-3 mt-md-0" aria-label="Project navigation">
                 <ul class="nav justify-content-center">
@@ -87,54 +88,40 @@
             <span class="pill">Team Project</span>
             <span class="pill">Role: UX Researcher / Designer</span>
           </div>
-        </div>
 
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a
+              class="social-icons mt-3 mb-4"
+              href="../assets/digital autonomy/INFO 464_ Group Project.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open project report PDF"
+            >
+              <i class="bi bi-file-earmark-text"></i>
+              Open Report (PDF)
+            </a>
+            </div>
+            
+        </div>
         <div class="col-lg-5">
-          <!-- Replace with your chosen “cover” image -->
-          <img class="case-img" src="../assets/digital-autonomy-cover.pdf" alt="Gen Z's Digital Autonomy cover" />
+            <img class="case-img" src="../assets/digital autonomy/cover.jpg" alt="Gen Z's Digital Autonomy cover" />
         </div>
       </div>
     </section>
 
-    <!-- OVERVIEW -->
-    <section class="case-section">
-      <div class="row gy-4">
-        <div class="col-lg-8">
-          <h2>Overview</h2>
-          <p>
-            Social media platforms often optimize for engagement at the cost of users' well-being. For Gen Z — the demographic that spends
-            the most time on these platforms — this can show up as attention fatigue, compulsive scrolling, and a growing mismatch between
-            how people <em>want</em> to use social media and how they actually do.
-          </p>
-          <p>
-            Our team studied how Gen Z experiences autonomy on social media, what conditions lead to intentional versus compulsive engagement,
-            and how design might support autonomy without feeling restrictive or punitive.
-          </p>
-        </div>
-
-        <div class="case-card">
-            <h3 class="mt-0">My Contribution</h3>
-            <ul class="mb-0">
-              <li>Led the design of the <strong>intent-mode wireframes</strong>, translating research insights into concrete interface concepts</li>
-              <li>Conducted <strong>2 diary studies</strong> and <strong>2 semi-structured interviews</strong> with Gen Z participants</li>
-              <li>Synthesized findings to support the project's core framing: <strong>autonomy as alignment between intent and content</strong></li>
-            </ul>
-          </div>
-          
-    </section>
+    <hr>
 
     <!-- PROBLEM + QUESTIONS -->
     <section class="case-section">
       <div class="row gy-4">
-        <div class="col-lg-6">
+        <div class="col-lg-7 border-end pe-5">
           <h2>Problem</h2>
-          <p>
-            Many social platforms use emotionally triggering, recommendation-heavy patterns to keep users scrolling. This can reduce autonomy,
-            create attention fatigue, and push usage into compulsive patterns.
-          </p>
+          <p>Social media platforms <strong>prioritize engagement over user well-being</strong>, often exploiting emotional triggers to keep users scrolling.</p>
+          <p>This causes <strong>reduced autonomy</strong>, attention fatigue and compulsive usage patterns.</p>
+          <p>Which has a significant impact on Gen Z users, who spend the most time on these platforms.</p>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-5 ps-4 pe-3">
           <h2>Research Questions</h2>
           <ul>
             <li>How do Gen Z users experience autonomy while using social media?</li>
@@ -145,11 +132,56 @@
       </div>
     </section>
 
+    <hr>
+
+    <section class="case-section">
+        <div class="row gy-4">
+            <div>
+                <h2>Overview</h2>
+                <p>Modern social media platforms like TikTok, Instagram, and YouTube use algorithms that prioritize engagement over user well-being, 
+                often exploiting emotional triggers to keep users scrolling. This can lead to compulsive usage patterns, particularly for Gen Z, 
+                who spend the most time on these platforms.
+                </p>
+
+                <p>
+                    Our team studied how Gen Z experiences autonomy on social media, what conditions lead to intentional versus compulsive engagement,
+                    and how design might support autonomy without feeling restrictive or punitive.
+                </p>
+            </div>
+
+  
+            <div class="row gy-3 mt-3">
+              <div class="col-lg-7">
+                <img class="case-img" src="../assets/digital autonomy/timeline.png" alt="Tripartite methodology timeline" />
+                <div class="caption">Project timeline</div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="case-card">
+                  <h3 class="mt-0">My Contribution</h3>
+                  <ul class="mb-0">
+                    <li>Conducted <strong>2 diary studies</strong> and <strong>2 semi-structured interviews</strong> with Gen Z participants</li>
+                    <ul>
+                      <li>Diary studies: myself + a video director for a major league team</li>
+                      <li>Interviews: UW geosciences student + UW student-athlete</li>
+                    </ul>
+                    <li>Synthesized findings into a core framing: <strong>autonomy as alignment between intent and content</strong></li>
+                    <li>Designed the <strong>Intent Mode</strong> wireframes to translate insights into an interface concept</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <hr>
+
     <!-- PROCESS / METHODOLOGY -->
     <section class="case-section">
       <h2>Methodology</h2>
       <p>
-        We used a <strong>Tripartite Methodology</strong> across empirical, conceptual, and technical phases — combining lived experience research
+        We used a <strong>Tripartite Methodology</strong> across empirical, conceptual, and technical phases combining lived experience research
         with values-focused analysis and design exploration.
       </p>
 
@@ -158,8 +190,8 @@
           <div class="case-card h-100">
             <h3 class="mt-0">Empirical</h3>
             <ul class="mb-0">
-              <li>Diary Study</li>
-              <li>Semi-Structured Interviews</li>
+              <li>Diary Study (n=10)</li>
+              <li>Semi-Structured Interviews (n=6)</li>
             </ul>
           </div>
         </div>
@@ -186,20 +218,13 @@
         </div>
       </div>
 
-      <!-- Optional: add your timeline/methodology slide export here -->
-      <div class="row gy-3 mt-4">
-        <div class="col-lg-12">
-          <img class="case-img" src="../assets/digital-autonomy-methodology.png" alt="Tripartite methodology timeline" />
-          <div class="caption">Tripartite methodology overview (export slide 5 as an image).</div>
-        </div>
-      </div>
     </section>
 
     <!-- FINDINGS -->
     <section class="case-section">
       <h2>Key Findings</h2>
 
-      <div class="row gy-4">
+      <!-- <div class="row gy-4">
         <div class="col-lg-6">
           <div class="case-card h-100">
             <h3 class="mt-0">Self-moderation breaks down</h3>
@@ -235,10 +260,9 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- Optional: add findings slide export -->
-      <div class="row gy-3 mt-4">
+      <!-- <div class="row gy-3 mt-4">
         <div class="col-lg-6">
           <img class="case-img" src="../assets/digital-autonomy-findings-1.png" alt="Diary + interview findings" />
           <div class="caption">Diary + interview findings (export slide 6 as an image).</div>
@@ -247,101 +271,76 @@
           <img class="case-img" src="../assets/digital-autonomy-findings-2.png" alt="Literature review findings" />
           <div class="caption">Literature review findings (export slide 7 as an image).</div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- DESIGN PRINCIPLE / FRAMING -->
     <section class="case-section">
-      <h2>Design Framing</h2>
-      <div class="row gy-4">
-        <div class="col-lg-7">
-          <p>
-            A key reframing emerged from our synthesis:
-          </p>
-          <p class="quote">
-            <strong>Autonomy ≠ usage level.</strong> It’s about <strong>intent</strong> and <strong>content</strong>.
-          </p>
-          <p>
-            Users wanted support that “works with you” rather than rigid time-based restrictions. That pushed us toward designs that help users
-            clarify their purpose and stay aligned with it — without surveillance or judgment.
-          </p>
-        </div>
-        <div class="col-lg-5">
-          <img class="case-img" src="../assets/digital-autonomy-intent.png" alt="Intent and content wireframe concept" />
-          <div class="caption">Intent-first concept (export slide 13 as an image).</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DESIGN CONCEPTS -->
-    <section class="case-section">
-      <h2>Design Concepts</h2>
-      <p>
-        We explored multiple directions that support autonomy through transparency, intentionality, and reduced compulsion.
-      </p>
-
-      <div class="row gy-4 mt-2">
-        <div class="col-lg-4">
-          <div class="case-card h-100">
-            <h3 class="mt-0">Personalized data visualizations</h3>
-            <p class="mb-0">
-              Make patterns visible so users can reflect on what they consume — and whether it aligns with their values and goals.
+        <h2>Design Framing & Concept: Intent Mode</h2>
+  
+        <div class="row gy-4">
+          <div>
+            <p>
+              Our synthesis led to a key reframing:
             </p>
+            <p>
+              <strong>Autonomy ≠ usage level. It's about intent and content</strong>.
+            </p>
+            <p>
+              Several participants relied on social media for work, identity, or responsibilities, which made time an inaccurate measurement for autonomy.
+              The real issue begins when the platform pulls them away from their original intent.
+            </p>
+  
+            <div class="case-card mt-3">
+              <h3 class="mt-0">Research quotes that shaped my direction</h3>
+              <p class="quote mb-3">
+                “I'm using these apps for "research"... but I'll come across my peers' content and sometimes get distracted... and start scrolling.”
+                <span class="muted">— Video director (Diary Study)</span>
+              </p>
+              <p class="quote mb-0">
+                “I wish that there was an easier way to set screen time limits, that worked with you instead of setting exact times.”
+                <span class="muted">— Student athlete (Interview)</span>
+              </p>
+            </div>
+  
+            <h3 class="mt-4">Features</h3>
+            <ul class="mb-0">
+              <li><strong>Mode selection</strong> asks why you're here (e.g., Research/Work, Inspiration, Social)</li>
+              <li><strong>UI adapts</strong> to keep you aligned: simplified interfaces, relevant explore content, quick access to saved research</li>
+              <li><strong>Reduced triggers</strong>: de-emphasizes notifications that cause compulsive checking</li>
+              <li><strong>Not restrictive</strong>: users can exit, switch, or ignore modes at any time</li>
+            </ul>
+          </div>
+  
+          <div>
+            <img class="case-img" src="../assets/digital autonomy/digital-autonomy-wireframe.png" alt="Intent-mode wireframe concept" />
+            <div class="caption">My wireframes: Intent Mode concept</div>
           </div>
         </div>
+      </section>
 
-        <div class="col-lg-4">
-          <div class="case-card h-100">
-            <h3 class="mt-0">Algorithm sensitivity / friction options</h3>
-            <p class="mb-0">
-              Give users control over recommendation intensity and “hook” patterns, nudging toward natural stopping points.
-            </p>
+      <section class="case-section">
+        <div class="row gy-4">
+          <div class="col-lg-6 border-end pe-5">
+            <h2>Takeaways</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+          </div>
+  
+          <div class="col-lg-6 ps-4 pe-3">
+            <h2>Future Work</h2>
+            <ul>
+                <li>Usability test the wireframes with Gen Z users and iterate based on feedback.</li>
+                <li>Adopt algorithm sensitivity & content visualization features into existing social media platforms.</li>
+                <li>Refine concepts into a more cohesive hi-fi prototype direction to eventually design a new social media platform that respects autonomy and attention.</li>
+            </ul>
           </div>
         </div>
+      </section>
 
-        <div class="col-lg-4">
-          <div class="case-card h-100">
-            <h3 class="mt-0">Progressive awareness program</h3>
-            <p class="mb-0">
-              Build autonomy through supportive conditions over time — aiming for user independence rather than system reliance.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Optional: wireframe/concept slides -->
-      <div class="row gy-3 mt-4">
-        <div class="col-lg-6">
-          <img class="case-img" src="../assets/digital-autonomy-wireframes-1.png" alt="Wireframes concept set 1" />
-          <div class="caption">Wireframe concepts (export slide 12 or 15 as an image).</div>
-        </div>
-        <div class="col-lg-6">
-          <img class="case-img" src="../assets/digital-autonomy-progressive.png" alt="Progressive awareness program" />
-          <div class="caption">Progressive awareness program (export slide 14 as an image).</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TAKEAWAYS -->
-    <section class="case-section">
-      <h2>Takeaways</h2>
-      <ul>
-        <li>Autonomy is supported best when users can specify <strong>intent</strong> and reflect on <strong>content</strong>.</li>
-        <li>Transparency builds self-awareness and reduces reliance on blunt time-limit tools.</li>
-        <li>Design should shift feeds toward patterns that naturally reduce compulsive engagement.</li>
-      </ul>
-    </section>
-
-    <!-- FUTURE WORK -->
-    <section class="case-section">
-      <h2>Future Work</h2>
-      <ul>
-        <li>Usability test the wireframes with Gen Z users and iterate based on feedback.</li>
-        <li>Explore how these features could be integrated into existing platforms.</li>
-        <li>Refine concepts into a more cohesive hi-fi prototype direction.</li>
-      </ul>
-
-    </section>
   </main>
 
   <footer>
