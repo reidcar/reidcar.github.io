@@ -113,4 +113,23 @@
     color: #444;
     line-height: 1.45;
   }
+
+  /* --- Moodboard presentation --- */
+    .moodboard-frame {
+        display: flex;
+        justify-content: center;
+        background: #f8f9fa;
+        border-radius: 14px;
+        padding: 1rem;
+        border: 1px solid rgba(0,0,0,0.06);
+    }
+    
+    .moodboard-frame img {
+        max-height: 650px;
+        width: auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+    }
+  
+  
   
