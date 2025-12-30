@@ -134,6 +134,83 @@
     box-shadow: 0 8px 28px rgba(0,0,0,0.08);
     object-fit: contain;
   }
+/* ========== CASE STUDY MOBILE ========== */
+
+@media (max-width: 768px) {
+
+  .case-hero .row {
+    text-align: center;
+  }
+
+  .case-meta {
+    justify-content: center;
+  }
+
+  .case-img {
+    max-height: 300px;
+  }
+
+  .case-section {
+    padding: 1.5rem 0;
+  }
+
+  .moodboard-frame {
+    padding: 1rem;
+  }
+
+}
+/* ========== CASE STUDY MOBILE ========== */
+
+@media (max-width: 768px) {
+
+  .case-hero .row {
+    text-align: center;
+  }
+
+  .case-meta {
+    justify-content: center;
+  }
+
+  .case-img {
+    max-height: 300px;
+  }
+
+  .case-section {
+    padding: 1.5rem 0;
+  }
+
+  .moodboard-frame {
+    padding: 1rem;
+  }
+
+}
+
+/* ========== CASE STUDY MOBILE ========== */
+
+@media (max-width: 768px) {
+
+    .case-hero .row {
+      text-align: center;
+    }
+  
+    .case-meta {
+      justify-content: center;
+    }
+  
+    .case-img {
+      max-height: 300px;
+    }
+  
+    .case-section {
+      padding: 1.5rem 0;
+    }
+  
+    .moodboard-frame {
+      padding: 1rem;
+    }
+  
+  }
+  
   
   
   
