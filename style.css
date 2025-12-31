@@ -1,184 +1,186 @@
-/* colors */
-  :root {
-      --african-violet: #9c89b8;
-      --periwinkle: #a3afeb;
-      --lavender-blush: #f5f2f7;
-      --pink-lavender: #efc3e6;
-      --onyx: #1e1e1e;
-      --soft-gray: #f8f9fa;
-    }
-  
-/* base typography & layout */
-  body {
-    background-color: white;
-    color: var(--onyx);
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    line-height: 1.7;
-    margin: 0;
-    padding: 0;
-  }
-
-  .container {
-    padding:0 1.5rem;
-    max-width: 1200px; 
-  }
-
-  h2 {
-    font-size: 1.75rem;
-    color: var(--african-violet);
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-
-/* logo */
-  .logo-img {
-      height: 125px;
-      width: auto;
-      border-radius: 50%;
-      display: block;
-      margin: 0, auto;
-  }
-
-/* site header */
-  .site-header {
-    background-color: white;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 0.5rem;
-  }
-
-  .nav-link {
-    color: var(--onyx);
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin: 0 1rem;
-  }
-  
-  .nav-link:hover {
-    color: var(--african-violet);
-  }
-  
-/* about section */
-  .about-intro {
-      color: var(--onyx);
-      text-align: left;
-      margin-bottom: 0.5rem;
-  }
-  
-  .intro-heading {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: var(--onyx);
-  }
-  
-  .intro-subheading {
-      font-size: 1.5rem;
-      color: var(--african-violet);
-      font-weight: 400;
-      margin-top: 0.5rem;
-  }
-  
-  .about-paragraph {
-    line-height: 1.8;
-    font-size: 1.14rem;
-  }
-
-  .about-photo {
-    width: 350px;
-    height: 450px;          /* taller than wide */
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease;
-  }
-  
-  
-  .about-photo:hover {
-    transform: scale(1.05);
-  }
-  
-
-/* project cards */
-  .card {
-    background-color: var(--soft-gray);
-    border: none;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
-    overflow: hidden;
-  }
-
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--onyx);
-    margin-bottom: 0.5rem;
-  }
-  
-  .card-text {
-    color: #555;
-    margin-bottom: 1rem;
-  }
-
-  .project-img {
-    width: auto;
-    height: 315px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: inline-block;
-  }
-
-  /* --- Clickable Project Cards (Refined) --- */
-.card-link {
-  /* display: block; */
-  color: inherit;
-  border-radius: 8px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
-  position: relative;
-  background-color: var(--soft-gray);
+/* =========================
+   THEME
+========================= */
+:root {
+  --african-violet: #9c89b8;
+  --periwinkle: #a3afeb;
+  --lavender-blush: #f5f2f7;
+  --pink-lavender: #efc3e6;
+  --onyx: #1e1e1e;
+  --soft-gray: #f8f9fa;
 }
 
-.card-link:hover {
+/* =========================
+   BASE
+========================= */
+body {
+  background-color: #fff;
+  color: var(--onyx);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+/* NOTE: This overrides Bootstrap’s container width/padding. Keep if intentional. */
+.container {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: var(--african-violet);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--african-violet);
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
+.site-header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.logo-img {
+  height: 125px;
+  width: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; /* fixed comma bug */
+}
+
+.nav-link {
+  color: var(--onyx);
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+}
+
+.nav-link:hover {
+  color: var(--african-violet);
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about-intro {
+  color: var(--onyx);
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.intro-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--onyx);
+}
+
+.intro-subheading {
+  font-size: 1.5rem;
+  color: var(--african-violet);
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.about-paragraph {
+  line-height: 1.8;
+  font-size: 1.14rem;
+}
+
+.about-photo {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.about-photo:hover {
+  transform: scale(1.05);
+}
+
+/* Social icons */
+.social-icons a {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--african-violet);
+  transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: var(--pink-lavender);
+}
+
+/* =========================
+   PROJECT CARDS (CLEAN + UNIFORM)
+========================= */
+
+/* Base card look (used everywhere) */
+.card {
+  background-color: var(--soft-gray);
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* IMPORTANT: your project “card” is an <a> with class="card card-link" */
+#projects .row > [class*="col-"] {
+  display: flex; /* makes each column a flex item so the tile can stretch */
+}
+
+#projects a.card.card-link {
+  display: flex;             /* turn the anchor into the flex container */
+  flex-direction: column;    /* stack content vertically */
+  width: 100%;
+  height: 100%;              /* fills the column height => uniform tiles */
+  color: inherit;
+  position: relative;
+  border-radius: 8px;
+  background-color: var(--soft-gray);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+#projects a.card.card-link:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  background-color: #cdbdec; /* subtle neutral lavender-gray tint */
-  text-decoration: none;
+  background-color: #cdbdec;
   cursor: pointer;
 }
 
-/* Titles & text stay readable */
-.card-link h3,
-.card-link p {
-  color: inherit;
+/* Card typography */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--onyx);
+  margin-bottom: 0.5rem;
 }
 
-.card-link:hover .card-footer {
-  opacity: 1;
-  transform: translateX(3px);
-  color: var(--african-violet);
+.card-text {
+  color: #555;
+  margin-bottom: 1rem;
 }
 
-/* Optional: minimalist arrow animation for the title */
-.card-link h3::after {
-  content: " →";
-  opacity: 0;
-  color: var(--african-violet);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  transform: translateX(-4px);
-}
-
-.card-link:hover h3::after {
-  opacity: 0.9;
-  transform: translateX(0);
-}
-
+/* Meta pill */
 .card-meta {
   font-size: 0.85rem;
   color: #777;
@@ -186,10 +188,11 @@
   letter-spacing: 0.02em;
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: rgba(0,0,0,0.03);
+  background-color: rgba(0, 0, 0, 0.03);
   border-radius: 20px;
 }
 
+/* Tags */
 .card-tags {
   display: flex;
   flex-wrap: wrap;
@@ -211,151 +214,151 @@
   border-color: rgba(0, 0, 0, 0.10);
 }
 
-/* research + work section */
-  .research-box,
-  .work-box {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
-    padding: 1rem;
-  }
+/* Title arrow */
+.card-link h3::after {
+  content: " →";
+  opacity: 0;
+  color: var(--african-violet);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateX(-4px);
+}
 
-  .research-box {
-    background-color: var(--lavender-blush);
-    border-left: 6px solid var(--african-violet);
-  }
+.card-link:hover h3::after {
+  opacity: 0.9;
+  transform: translateX(0);
+}
 
-  .work-box {
-    background-color: var(--soft-gray);
-    border-left: 6px solid var(--periwinkle);
-  }
+/* One definitive project image rule (no duplicates) */
+.project-img {
+  width: 100%;
+  height: 220px;     /* uniform preview height */
+  object-fit: cover; /* crops nicely */
+  border-radius: 8px;
+  display: block;
+  margin-top: auto;  /* pushes image to bottom -> aligned layouts */
+}
 
-  .research-title,
-  .work-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--onyx);
-  }
+/* OPTIONAL: if you want PERFECT uniformity even with long tag lists
+   (uncomment to clamp description text)
+*/
+/*
+#projects .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+*/
 
-  .research-role {
-    font-size: 1.1rem;
-    color: var(--african-violet);
-  }
+/* =========================
+   RESEARCH + WORK
+========================= */
+.research-box,
+.work-box {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+  padding: 1rem;
+}
 
-  .work-role {
-    font-size: 1.1rem;
-    color: var(--periwinkle);
-  }
+.research-box {
+  background-color: var(--lavender-blush);
+  border-left: 6px solid var(--african-violet);
+}
 
-  .research-description,
-  .work-description {
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
-  }
+.work-box {
+  background-color: var(--soft-gray);
+  border-left: 6px solid var(--periwinkle);
+}
 
-  .research-link a,
-  .work-link a {
-    color: var(--onyx);
-    font-weight: 500;
-  }
+.research-title,
+.work-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--onyx);
+}
 
-  .research-link a:hover,
-  .work-link a:hover {
-    color: var(--pink-lavender);
-  }
+.research-role {
+  font-size: 1.1rem;
+  color: var(--african-violet);
+}
 
-/* contact section */
-  #contact p {
-    font-size: 1.1rem;
-    color: var(--onyx);
-  }
+.work-role {
+  font-size: 1.1rem;
+  color: var(--periwinkle);
+}
 
-/* footer */
-  footer {
-    border-top: 1px solid #e0e0e0;
-    text-align: center;
-    padding: 2rem 0;
-    font-size: 0.875rem;
-    background-color: var(--soft-gray);
-    color: var(--onyx);
-  }
+.research-description,
+.work-description {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
 
-/* buttons */
-  .btn-primary {
-    background-color: var(--african-violet);
-    border: none;
-    color: white;
-    padding: 0.5rem 1.2rem;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  }
+.research-link a,
+.work-link a {
+  color: var(--onyx);
+  font-weight: 500;
+}
 
-  .btn-primary:hover {
-    background-color: var(--pink-lavender);
-    color: var(--onyx);
-  }
+.research-link a:hover,
+.work-link a:hover {
+  color: var(--pink-lavender);
+}
 
-  .btn-outline-violet {
-    border: 2px solid var(--periwinkle);
-    color: var(--periwinkle);
-    background-color: transparent;
-    padding: 0.5rem 1.2rem;
-    border-radius: 10px;
-    font-weight: 500;
-    transition: all 0.2s ease;
-  }
-  
-  .btn-outline-violet:hover {
-    background-color: var(--pink-lavender);
-    color: white;
-  }  
+/* =========================
+   CONTACT
+========================= */
+#contact p {
+  font-size: 1.1rem;
+  color: var(--onyx);
+}
 
-/* social icons */
-  .social-icons a {
-    font-size: 2rem;
-    margin-right: 1rem;
-    color: var(--african-violet);
-    transition: color 0.2s ease;
-  }
+/* Buttons */
+.btn-primary {
+  background-color: var(--african-violet);
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
 
-  .social-icons a:hover {
-    color: var(--pink-lavender);
-  }
+.btn-primary:hover {
+  background-color: var(--pink-lavender);
+  color: var(--onyx);
+}
 
-/* links */
-  a {
-    text-decoration: none;
-    color: var(--african-violet);
-  }
+.btn-outline-violet {
+  border: 2px solid var(--periwinkle);
+  color: var(--periwinkle);
+  background-color: transparent;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
 
-  /* a:hover {
-    color: var(--pink-lavender);
-  } */
+.btn-outline-violet:hover {
+  background-color: var(--pink-lavender);
+  color: #fff;
+}
 
-/* ---------------------------- */
+/* =========================
+   FOOTER
+========================= */
+footer {
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.875rem;
+  background-color: var(--soft-gray);
+  color: var(--onyx);
+}
 
-/* Emerald Uprising page */
-  .hero-banner {
-    background: linear-gradient(135deg, #f5f2f7 0%, #e8f0fb 100%);
-    border-radius: 16px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
-  }
-
-  .badge {
-    font-size: 0.95rem;
-    padding: 0.5rem 0.8rem;
-    border-radius: 999px;
-  }
-
-  .text-violet {
-    color: var(--african-violet);
-  }
-
-/* ---------------------------- */
-  
-/* RSOcial */
-
+/* =========================
+   EMBEDS / IFRAME
+========================= */
 iframe {
   border: none;
   border-radius: 16px;
@@ -363,27 +366,18 @@ iframe {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* iframe:hover {
-  transform: scale(1.01);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
-} */
-
-/* ========== MOBILE FOUNDATION ========== */
-
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 768px) {
-
-  body {
-    font-size: 16px;
-  }
+  body { font-size: 16px; }
 
   h1 {
     font-size: 2rem;
     line-height: 1.2;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
+  h2 { font-size: 1.5rem; }
 
   .site-header .container {
     padding: 1rem 1rem;
@@ -398,24 +392,4 @@ iframe {
     width: 48px;
     height: auto;
   }
-
 }
-
-@media (max-width: 768px) {
-
-  .hero {
-    padding-top: 2rem;
-  }
-
-  .hero img {
-    max-width: 85%;
-    margin: 0 auto;
-    display: block;
-  }
-
-}
-
-
-  
-  
-  
