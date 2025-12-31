@@ -25,7 +25,7 @@ body {
 
 /* NOTE: This overrides Bootstrap’s container width/padding. Keep if intentional. */
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
   padding: 0 1.5rem;
 }
 
@@ -231,24 +231,12 @@ a {
 /* One definitive project image rule (no duplicates) */
 .project-img {
   width: 100%;
-  height: 220px;     /* uniform preview height */
-  object-fit: cover; /* crops nicely */
+  height: 320px;        /* more presence */
+  object-fit: cover;
   border-radius: 8px;
   display: block;
-  margin-top: auto;  /* pushes image to bottom -> aligned layouts */
+  margin-top: auto;
 }
-
-/* OPTIONAL: if you want PERFECT uniformity even with long tag lists
-   (uncomment to clamp description text)
-*/
-/*
-#projects .card-text {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-*/
 
 /* =========================
    RESEARCH + WORK
